@@ -14,5 +14,14 @@
         android:id="@+id/serviceListFragment"
         android:name="com.samir.features.ui.fragment.serviceList.ServiceListFragment"
         android:label="fragment_serive_list"
-        tools:layout="@layout/fragment_service_list" />
+        tools:layout="@layout/fragment_service_list" >
+        <action
+            android:id="@+id/action_serviceListFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.samir.features.ui.fragment.others.OthersFragment"
+        android:label="fragment_others"
+        tools:layout="@layout/fragment_others" />
 </navigation>
