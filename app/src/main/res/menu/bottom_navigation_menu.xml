@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- write the id of fragment that in the (main_nav_graph) -->
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/serviceListFragment"
         android:icon="@drawable/menu_ic_home"
         android:title="@string/menu_home" />
     <item
-        android:id="@+id/paymentHistoryFragment"
+        android:id="@+id/mapsFragment"
         android:icon="@drawable/menu_ic_others"
         android:title="@string/menu_others" />
 
