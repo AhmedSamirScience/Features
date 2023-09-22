@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="com.samir.features.ui.fragment.MapsFragment"
+        android:name="com.samir.features.ui.fragment.maps.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/serviceListFragment"
-        android:name="com.samir.features.ui.fragment.ServiceListFragment"
+        android:name="com.samir.features.ui.fragment.serviceList.ServiceListFragment"
         android:label="fragment_serive_list"
         tools:layout="@layout/fragment_service_list" />
 </navigation>
