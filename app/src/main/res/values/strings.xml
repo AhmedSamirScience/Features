@@ -49,8 +49,11 @@
 
     <string name="app_name">Features</string>
 
-    <string name="menu_home">الرئيسية</string>
-    <string name="menu_others">اخري</string>
+    <string name="menu_home">Main</string>
+    <string name="menu_others">Others</string>
+
+    <string name="servicelise_service">Service List</string>
+    <string name="maps">Maps</string>
 
 
 
