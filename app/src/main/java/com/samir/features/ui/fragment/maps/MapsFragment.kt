@@ -6,7 +6,6 @@ import com.samir.features.R
 import com.samir.features.base.BaseFragment
 import com.samir.features.databinding.FragmentMapsBinding
 
-
 class MapsFragment : BaseFragment<MapsViewModel, FragmentMapsBinding>()  {
 
     override fun getContentView(): Int {

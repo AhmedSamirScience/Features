@@ -31,5 +31,14 @@
         android:id="@+id/backFragment"
         android:name="com.samir.features.ui.fragment.back.BackFragment"
         android:label="fragment_back"
-        tools:layout="@layout/fragment_back" />
+        tools:layout="@layout/fragment_back" >
+        <action
+            android:id="@+id/action_backFragment_to_popStackBackFragment"
+            app:destination="@id/popStackBackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popStackBackFragment"
+        android:name="com.samir.features.ui.fragment.popStack.PopStackBackFragment"
+        android:label="fragment_pop_stack_back"
+        tools:layout="@layout/fragment_pop_stack_back" />
 </navigation>

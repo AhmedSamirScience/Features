@@ -7,7 +7,6 @@ import com.samir.features.R
 import com.samir.features.base.BaseFragment
 import com.samir.features.databinding.FragmentServiceListBinding
 
-
 class ServiceListFragment : BaseFragment<ServiceListViewModel, FragmentServiceListBinding>()  {
 
     override fun getContentView(): Int {
@@ -31,18 +30,17 @@ class ServiceListFragment : BaseFragment<ServiceListViewModel, FragmentServiceLi
         when (v)
         {
             baseViewBinding.mapsBtn-> {
-                //val direction = ServiceListFragmentDirections.actionNavHomeToNavBillPaymentSearch(customerListRs, routeName)
-                //findNavController().navigate(direction)
                 findNavController().navigate(R.id.action_serviceListFragment_to_mapsFragment)
             }
             baseViewBinding.backBtn-> {
-                findNavController().navigate(R.id.action_serviceListFragment_to_backFragment)
+                val direction = ServiceListFragmentDirections.actionServiceListFragmentToBackFragment()
+                findNavController().navigate(direction)
+                /**
+                 * or you can use this
+                 */
+                //findNavController().navigate(R.id.action_serviceListFragment_to_backFragment)
             }
         }
     }
-
-    //region application life cycle
-
-    //endregion
 
 }

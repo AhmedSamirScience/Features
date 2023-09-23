@@ -57,8 +57,13 @@
     <string name="maps_title">Maps</string>
 
     <string name="back_title">Back</string>
-
+    <string name="back_option">Back Options</string>
+ 
     <string name="others_title">Others</string>
+
+    <string name="popstackback_title">Pop Stack Back</string>
+    <string name="popstackback_popstackbtn">Pop Stack Back</string>
+    <string name="popstackback_normalbackbtn">Normal Back</string>
 
 
 

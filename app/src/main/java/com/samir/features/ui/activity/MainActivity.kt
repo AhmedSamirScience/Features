@@ -1,14 +1,19 @@
 package com.samir.features.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.view.View
-import androidx.navigation.NavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.samir.features.R
-import com.samir.features.databinding.ActivityMainBinding
+ import android.os.Bundle
+ import android.view.KeyEvent
+ import android.view.View
+ import androidx.appcompat.app.AppCompatActivity
+ import androidx.fragment.app.Fragment
+ import androidx.fragment.app.FragmentManager
+ import androidx.navigation.NavController
+ import androidx.navigation.fragment.NavHostFragment
+ import androidx.navigation.ui.NavigationUI
+ import com.google.android.material.bottomnavigation.BottomNavigationView
+ import com.samir.features.R
+ import com.samir.features.databinding.ActivityMainBinding
+ import com.samir.features.ui.fragment.back.BackFragment
+
 
 class MainActivity : AppCompatActivity() {
     var binding: ActivityMainBinding? = null
@@ -42,4 +47,21 @@ class MainActivity : AppCompatActivity() {
         binding?.bottomNavigationView?.visibility = View.GONE
     }
 
+    override fun dispatchKeyEvent(event: KeyEvent): Boolean {
+        return if (event.keyCode == KeyEvent.KEYCODE_BACK) {
+            val id = navController.currentDestination?.id
+            if (id ==  R.id.backFragment) {
+                //this means that if the user pressed the back button then it will (not) get back to the previous fragment
+                true
+            }
+            else
+            {
+                //this means that if the user pressed the back button then it will get back to the previous fragment
+                super.dispatchKeyEvent(event)
+            }
+        } else super.dispatchKeyEvent(event)
+
+
+
+    }
 }

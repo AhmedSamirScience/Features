@@ -1,6 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
+    /**
+    *  Android Navigation Component (Nav Graph) -> this is for args and directions
+    */
+    id 'androidx.navigation.safeargs'
+
 }
 
 android {
@@ -65,4 +71,11 @@ dependencies {
     //def nav_version = "" //$nav_version if you want to generalise version number
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    /**
+     *  A scalable size unit
+     */
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
 }
