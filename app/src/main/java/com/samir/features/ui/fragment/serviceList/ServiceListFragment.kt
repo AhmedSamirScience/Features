@@ -24,6 +24,7 @@ class ServiceListFragment : BaseFragment<ServiceListViewModel, FragmentServiceLi
     override fun initView() {
         setInitialAnimations()
         baseViewBinding.mapsBtn.setOnClickListener(this)
+        baseViewBinding.backBtn.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -33,6 +34,9 @@ class ServiceListFragment : BaseFragment<ServiceListViewModel, FragmentServiceLi
                 //val direction = ServiceListFragmentDirections.actionNavHomeToNavBillPaymentSearch(customerListRs, routeName)
                 //findNavController().navigate(direction)
                 findNavController().navigate(R.id.action_serviceListFragment_to_mapsFragment)
+            }
+            baseViewBinding.backBtn-> {
+                findNavController().navigate(R.id.action_serviceListFragment_to_backFragment)
             }
         }
     }

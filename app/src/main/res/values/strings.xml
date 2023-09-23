@@ -52,9 +52,18 @@
     <string name="menu_home">Main</string>
     <string name="menu_others">Others</string>
 
-    <string name="servicelise_service">Service List</string>
-    <string name="maps">Maps</string>
+    <string name="servicelise_title">Service List</string>
 
+    <string name="maps_title">Maps</string>
+
+    <string name="back_title">Back</string>
+
+    <string name="others_title">Others</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

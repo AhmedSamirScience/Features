@@ -10,11 +10,11 @@
          android:padding="30dp">
 
           <TextView
-              android:id="@+id/textView"
+              android:id="@+id/titleTextView"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:gravity="center"
-              android:text="@string/servicelise_service"
+              android:text="@string/servicelise_title"
               android:textSize="50dp"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
@@ -24,10 +24,19 @@
               android:id="@+id/mapsBtn"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="@string/maps"
+              android:text="@string/maps_title"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toBottomOf="@+id/textView" />
+              app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+          <Button
+              android:id="@+id/backBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/back_title"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/mapsBtn" />
+
 
      </androidx.constraintlayout.widget.ConstraintLayout>
 

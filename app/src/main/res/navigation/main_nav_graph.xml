@@ -18,10 +18,18 @@
         <action
             android:id="@+id/action_serviceListFragment_to_mapsFragment"
             app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_serviceListFragment_to_backFragment"
+            app:destination="@id/backFragment" />
     </fragment>
     <fragment
         android:id="@+id/othersFragment"
         android:name="com.samir.features.ui.fragment.others.OthersFragment"
         android:label="fragment_others"
         tools:layout="@layout/fragment_others" />
+    <fragment
+        android:id="@+id/backFragment"
+        android:name="com.samir.features.ui.fragment.back.BackFragment"
+        android:label="fragment_back"
+        tools:layout="@layout/fragment_back" />
 </navigation>
