@@ -57,8 +57,9 @@
     <string name="maps_title">Maps</string>
 
     <string name="back_title">Back</string>
+    <string name="intent_title">Intent</string>
     <string name="back_option">Back Options</string>
- 
+
     <string name="others_title">Others</string>
 
     <string name="popstackback_title">Pop Stack Back</string>
@@ -66,9 +67,12 @@
     <string name="popstackback_normalbackbtn">Normal Back</string>
 
 
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstTest_title">First Fragment</string>
+    <string name="firstTest_toSecond_btn">To second Fragment</string>
+    <string name="secondTest_title">Second Fragment</string>
+    <string name="secondTest_toFirst_btn">To first Fragment</string>
 
 
 </resources>

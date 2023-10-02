@@ -4,15 +4,12 @@ package com.samir.features.ui.activity
  import android.view.KeyEvent
  import android.view.View
  import androidx.appcompat.app.AppCompatActivity
- import androidx.fragment.app.Fragment
- import androidx.fragment.app.FragmentManager
  import androidx.navigation.NavController
  import androidx.navigation.fragment.NavHostFragment
  import androidx.navigation.ui.NavigationUI
  import com.google.android.material.bottomnavigation.BottomNavigationView
  import com.samir.features.R
  import com.samir.features.databinding.ActivityMainBinding
- import com.samir.features.ui.fragment.back.BackFragment
 
 
 class MainActivity : AppCompatActivity() {
